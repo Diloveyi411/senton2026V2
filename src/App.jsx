@@ -14,6 +14,8 @@ import TermsPage from './pages/TermsPage'
 import PrivacyPage from './pages/PrivacyPage'
 import DeliveryPage from './pages/DeliveryPage'
 import ContactPage from './pages/ContactPage'
+import BlogPage from './pages/BlogPage'
+import ArticlePage from './pages/ArticlePage'
 
 export default function App() {
   return (
@@ -34,6 +36,8 @@ export default function App() {
           <Route path="/doprava" element={<DeliveryPage />} />
           <Route path="/kontakt" element={<ContactPage />} />
           <Route path="/cookies" element={<Navigate to="/ochrana-udajov#cookies" replace />} />
+          <Route path="/blog" element={<BlogPage />} />
+          <Route path="/blog/:slug" element={<ArticlePage />} />
         </Routes>
         <Footer />
       </HashRouter>
