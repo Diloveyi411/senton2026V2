@@ -728,7 +728,7 @@ function ArticleChladnicky() {
           <li><span className="check-icon">✓</span> Hlučnosť: max. 38 dB pre otvorenú kuchyňu</li>
           <li><span className="check-icon">✓</span> No Frost — aspoň v mrazničke, ideálne Total No Frost</li>
           <li><span className="check-icon">✓</span> Energetická trieda min. C, ideálne A alebo B</li>
-          <li><span className="check-icon">✓</span> Skontrolujte šírku dverí — chladnička musí vojsť do bytu</span></li>
+          <li><span className="check-icon">✓</span> Skontrolujte šírku dverí — chladnička musí vojsť do bytu</li>
         </ul>
       </div>
 
