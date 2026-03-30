@@ -353,7 +353,10 @@ export default function ArticlePage() {
         </div>
       </div>
 
-      <section className="article-hero">
+      <section
+        className={`article-hero${meta.heroImg ? ' article-hero--bg' : ''}`}
+        style={meta.heroImg ? { backgroundImage: `url(${meta.heroImg})` } : {}}
+      >
         <div className="container">
           <span className="article-category">{meta.category}</span>
           <h1 className="article-title">{meta.title}</h1>
@@ -365,12 +368,6 @@ export default function ArticlePage() {
           </div>
         </div>
       </section>
-
-      {meta.heroImg && (
-        <div className="article-hero-img-wrap">
-          <img src={meta.heroImg} alt={meta.title} className="article-hero-img" />
-        </div>
-      )}
 
       <section className="article-main">
         <div className="container article-layout">
