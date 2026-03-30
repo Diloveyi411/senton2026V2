@@ -596,11 +596,152 @@ function ArticleBoschElectrolux() {
   )
 }
 
+function ArticleChladnicky() {
+  return (
+    <article className="article-body">
+
+      <div className="article-section">
+        <p className="article-intro">
+          Chladnička je spotrebič, ktorý beží 24 hodín denne, 365 dní v roku. Zlá voľba vás bude trápiť každý deň
+          nasledujúcich 10–15 rokov. Tieto chyby robí väčšina ľudí — nie z nevedomosti, ale preto, že sa sústredia
+          na nesprávne veci.
+        </p>
+      </div>
+
+      <div className="article-section">
+        <h2>Chyba č. 1: Kúpili ste príliš malý objem</h2>
+        <p>
+          Najčastejšia chyba. Ľudia podceňujú, koľko miesta v chladničke reálne potrebujú — a potom zápasiaci
+          s plnou chladničkou každý deň.
+        </p>
+        <div className="article-table-wrap">
+          <table className="article-table">
+            <thead>
+              <tr><th>Domácnosť</th><th>Odporúčaný objem</th><th>Minimálny objem</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>1 osoba</td><td>200–250 l</td><td>180 l</td></tr>
+              <tr><td>2 osoby</td><td>250–300 l</td><td>220 l</td></tr>
+              <tr><td>3–4 osoby</td><td>300–400 l</td><td>280 l</td></tr>
+              <tr><td>5 a viac osôb</td><td>400+ l</td><td>350 l</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div className="article-tip">
+          <strong>Pravidlo:</strong> Počítajte 80–100 litrov na osobu. Ak varíte doma pravidelne a nakupujete
+          raz týždenne, radšej vyberte väčší model. Chladnička sa nedá ľahko vymeniť.
+        </div>
+      </div>
+
+      <div className="article-section">
+        <h2>Chyba č. 2: Nezmerali ste priestor vrátane vetrania</h2>
+        <p>
+          Chladnička potrebuje priestor na chladenie — vzduch musí cirkulovať okolo kondenzátora. Ak ju zasunete
+          do tesného výklenku bez vetrania, motor pracuje neustále a spotrebič sa pokazí oveľa skôr.
+        </p>
+        <ul className="article-list">
+          <li><strong>Nad chladničkou</strong> — min. 50 mm voľného priestoru</li>
+          <li><strong>Za chladničkou</strong> — min. 50 mm (modely s kondenzátorom vzadu)</li>
+          <li><strong>Po bokoch</strong> — min. 5–10 mm na každej strane</li>
+          <li><strong>No Frost modely</strong> — majú ventilátor vpredu dole, menej nárokov na zadnú stranu</li>
+        </ul>
+        <p>
+          Zmerajte tiež <strong>šírku dverí a chodieb</strong> — chladnička musí fyzicky vojsť do bytu.
+          Štandardná šírka 60 cm chladničky plus dvierka je pri otvorení okolo 120 cm.
+        </p>
+      </div>
+
+      <div className="article-section">
+        <h2>Chyba č. 3: Ignorovali ste hlučnosť</h2>
+        <p>
+          Hlučnosť chladničky je parameter, ktorý ľudia objavujú až po kúpe — keď je neskoro.
+          Chladnička stojí v kuchyni a beží stále. Rozdiel medzi 35 dB a 42 dB je v praxi veľmi citeľný.
+        </p>
+        <div className="article-energy-grid">
+          <div className="article-energy-row">
+            <span className="energy-badge energy-a">35 dB</span>
+            <span>Takmer nepočuteľná. Tiché modely prémiových značiek — Bosch, Liebherr. Ideálne pre otvorenú kuchyňu.</span>
+          </div>
+          <div className="article-energy-row">
+            <span className="energy-badge energy-b">38 dB</span>
+            <span>Štandard dobrých modelov. Počuteľná len v tichej miestnosti. Pre väčšinu domácností v poriadku.</span>
+          </div>
+          <div className="article-energy-row">
+            <span className="energy-badge energy-c">42 dB</span>
+            <span>Výrazne počuteľná. Ak máte kuchyňu prepojenú s obývačkou, bude vás rušiť.</span>
+          </div>
+          <div className="article-energy-row">
+            <span className="energy-badge energy-d">45+ dB</span>
+            <span>Veľmi hlasná. Lacné modely bez kvalitného kompresora. Dlhodobo nepríjemné.</span>
+          </div>
+        </div>
+      </div>
+
+      <div className="article-section">
+        <h2>Chyba č. 4: Nekúpili ste No Frost keď mali</h2>
+        <p>
+          No Frost technológia zabraňuje tvorbe ľadu v mrazničke. Bez nej musíte mrazničku odmrazovať
+          ručne — zvyčajne každé 3–6 mesiacov. Je to 2–3 hodiny práce a dočasné vykladanie mrazeného tovaru.
+        </p>
+        <ul className="article-list">
+          <li><strong>Bez No Frost</strong> — mrazničku treba odmrazovať ručne, nižšia cena o 50–80 €</li>
+          <li><strong>No Frost v mrazničke</strong> — automatické odmrazovanie mrazničky, chladnička manuálne</li>
+          <li><strong>Total No Frost</strong> — automatické odmrazovanie oboch priestorov, najpohodlnejšie</li>
+        </ul>
+        <div className="article-tip">
+          <strong>Odporúčanie:</strong> Pre väčšinu domácností sa Total No Frost oplatí. Priplatok 60–100 €
+          sa vráti v ušetrenom čase a pohodlí behom prvého roka.
+        </div>
+      </div>
+
+      <div className="article-section">
+        <h2>Chyba č. 5: Podceňovanie energetickej triedy</h2>
+        <p>
+          Chladnička je jediný spotrebič, ktorý nikdy nevypnete. Každý rok vám nôta za elektrinu priamo ukazuje,
+          či ste kúpili dobre.
+        </p>
+        <div className="article-table-wrap">
+          <table className="article-table">
+            <thead>
+              <tr><th>Trieda</th><th>Ročná spotreba (300 l)</th><th>Ročné náklady (0,20 €/kWh)</th></tr>
+            </thead>
+            <tbody>
+              <tr><td><strong>A</strong></td><td>~100 kWh</td><td>~20 €</td></tr>
+              <tr><td><strong>B</strong></td><td>~130 kWh</td><td>~26 €</td></tr>
+              <tr><td><strong>C</strong></td><td>~165 kWh</td><td>~33 €</td></tr>
+              <tr><td><strong>D</strong></td><td>~210 kWh</td><td>~42 €</td></tr>
+              <tr><td><strong>E a horšie</strong></td><td>270+ kWh</td><td>54+ €</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>
+          Rozdiel medzi triedou A a E je až <strong>35 € ročne</strong>. Za 15 rokov životnosti chladničky
+          to je 525 € — viac ako priplatok za energeticky úsporný model.
+        </p>
+      </div>
+
+      <div className="article-section">
+        <h2>Záverečný checklist pred kúpou</h2>
+        <ul className="article-checklist">
+          <li><span className="check-icon">✓</span> Objem: 80–100 l na osobu, radšej viac</li>
+          <li><span className="check-icon">✓</span> Rozmery výklenku vrátane priestoru na vetranie</li>
+          <li><span className="check-icon">✓</span> Hlučnosť: max. 38 dB pre otvorenú kuchyňu</li>
+          <li><span className="check-icon">✓</span> No Frost — aspoň v mrazničke, ideálne Total No Frost</li>
+          <li><span className="check-icon">✓</span> Energetická trieda min. C, ideálne A alebo B</li>
+          <li><span className="check-icon">✓</span> Skontrolujte šírku dverí — chladnička musí vojsť do bytu</span></li>
+        </ul>
+      </div>
+
+    </article>
+  )
+}
+
 const articleComponents = {
   'ako-vybrat-vstavanu-ruru': ArticleRura,
   'rozmery-pre-zabudovanie-checklist': ArticleRozmery,
   'pracka-susicka-alebo-kombinacia': ArticlePrackaSusicka,
   'bosch-vs-electrolux-umyvacky': ArticleBoschElectrolux,
+  'najcastejsie-chyby-pri-vybere-chladnicky': ArticleChladnicky,
 }
 
 export default function ArticlePage() {
