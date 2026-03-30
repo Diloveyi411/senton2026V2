@@ -736,12 +736,121 @@ function ArticleChladnicky() {
   )
 }
 
+function ArticleKuchynskySet() {
+  return (
+    <article className="article-body">
+
+      <div className="article-section">
+        <p className="article-intro">
+          Rúra, varná doska, digestor, umývačka — kuchynské spotrebiče väčšina ľudí kupuje postupne, jeden po druhom.
+          Pritom kúpa viacerých naraz môže ušetriť stovky eur a ušetriť vám aj veľa starostí s kompatibilitou.
+        </p>
+      </div>
+
+      <div className="article-section">
+        <h2>Prečo kupovať v sete?</h2>
+        <p>
+          Spotrebiče od rovnakého výrobcu do seba vizuálne pasujú — rovnaké ovládacie prvky, rovnaký dizajn nerezovej ocele,
+          rovnaká farebná teplota LED podsvietenia. Ale úspora nejde len o estetiku.
+        </p>
+        <ul className="article-list">
+          <li><strong>Zľava na set:</strong> pri kúpe 3 a viac spotrebičov naraz Senton poskytuje množstevnú zľavu</li>
+          <li><strong>Jeden dovoz:</strong> platíte dopravu raz, nie trikrát</li>
+          <li><strong>Kompatibilita zaručená:</strong> rúra + doska od rovnakého výrobcu fungujú spolu bez problémov</li>
+          <li><strong>Záruka a servis:</strong> jeden kontakt pre všetky spotrebiče</li>
+        </ul>
+      </div>
+
+      <div className="article-section">
+        <h2>Typická zostava kuchynského setu</h2>
+        <p>Najčastejšia kombinácia pri komplexnom vybavení kuchyne:</p>
+        <div className="article-checklist-numbered">
+          <div className="article-check-item">
+            <div className="check-num">1</div>
+            <div>
+              <strong>Vstavaná rúra</strong>
+              <p>Základ každej kuchyne. Pri sete odporúčame pyrolytické čistenie — ušetríte čas aj námahu.</p>
+            </div>
+          </div>
+          <div className="article-check-item">
+            <div className="check-num">2</div>
+            <div>
+              <strong>Varná doska</strong>
+              <p>Indukcia alebo plyn — podľa preferencie. Šírka musí odpovedať výklenku v linke (60 cm alebo 90 cm).</p>
+            </div>
+          </div>
+          <div className="article-check-item">
+            <div className="check-num">3</div>
+            <div>
+              <strong>Digestor</strong>
+              <p>Šírka digestora by mala byť rovnaká alebo väčšia ako varná doska. Skontrolujte výkon v m³/h.</p>
+            </div>
+          </div>
+          <div className="article-check-item">
+            <div className="check-num">4</div>
+            <div>
+              <strong>Umývačka riadu</strong>
+              <p>Vstavaná 60 cm alebo 45 cm. Pri malých kuchyniach zvážte užší model — ušetríte miesto.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="article-section">
+        <h2>Kedy sa set oplatí najviac?</h2>
+        <div className="article-budget-grid">
+          <div className="article-budget-card">
+            <span className="article-budget-label">Ideálne</span>
+            <h3>Nová kuchyňa</h3>
+            <p>Kupujete všetko naraz pri rekonštrukcii alebo zariaďovaní nového bytu. Maximálna úspora aj pohodlie.</p>
+          </div>
+          <div className="article-budget-card article-budget-featured">
+            <span className="article-budget-label">Najčastejšie</span>
+            <h3>Výmena 2–3 starých</h3>
+            <p>Niektoré spotrebiče ešte fungujú, ale rúra a doska dosloužili. Ideálny čas dokúpiť aj digestor.</p>
+          </div>
+          <div className="article-budget-card">
+            <span className="article-budget-label">Menej výhodné</span>
+            <h3>Jeden spotrebič</h3>
+            <p>Kupujete len rúru alebo len umývačku? Set sa neoplatí, ale stále môžete vybrať rovnakú značku do budúcna.</p>
+          </div>
+        </div>
+      </div>
+
+      <div className="article-section">
+        <h2>Ako na to v Sentone</h2>
+        <p>
+          V Sentone máme kompletné zostavy od Bosch, Electrolux a AEG. Stačí zavolať — poradíme vám, ktoré modely
+          do seba pasujú vizuálne aj technicky, a spočítame cenu za celú zostavu vrátane dopravy a inštalácie.
+        </p>
+        <div className="article-tip">
+          <strong>Tip:</strong> Pri objednávke setu sa spýtajte na odvoz starých spotrebičov. Pri väčších objednávkach
+          ho vieme zahrnúť do ceny dopravy.
+        </div>
+      </div>
+
+      <div className="article-section">
+        <h2>Checklist pred objednávkou setu</h2>
+        <ul className="article-checklist">
+          <li><span className="check-icon">✓</span> Zmerajte všetky výklenky vopred (šírka, výška, hĺbka)</li>
+          <li><span className="check-icon">✓</span> Rozhodnite sa pre jednu značku — pasujú vizuálne aj technicky</li>
+          <li><span className="check-icon">✓</span> Skontrolujte prívody (elektrina, plyn, voda, odpad)</li>
+          <li><span className="check-icon">✓</span> Zahrňte digestor — jeho šírka = šírka varnej dosky alebo väčšia</li>
+          <li><span className="check-icon">✓</span> Opýtajte sa na množstevnú zľavu a cenu dopravy za celý set</li>
+        </ul>
+      </div>
+
+    </article>
+  )
+}
+
 const articleComponents = {
   'ako-vybrat-vstavanu-ruru': ArticleRura,
   'rozmery-pre-zabudovanie-checklist': ArticleRozmery,
   'pracka-susicka-alebo-kombinacia': ArticlePrackaSusicka,
   'bosch-vs-electrolux-umyvacky': ArticleBoschElectrolux,
   'najcastejsie-chyby-pri-vybere-chladnicky': ArticleChladnicky,
+  'kuchynsky-set-ako-setrit': ArticleKuchynskySet,
 }
 
 export default function ArticlePage() {
