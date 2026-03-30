@@ -463,10 +463,144 @@ function ArticlePrackaSusicka() {
   )
 }
 
+function ArticleBoschElectrolux() {
+  return (
+    <article className="article-body">
+
+      <div className="article-section">
+        <p className="article-intro">
+          Bosch a Electrolux sú dvaja najpredávanejší výrobcovia umývačiek na slovenskom trhu. Oba robia spoľahlivé
+          spotrebiče — ale s inou filozofiou. Bosch stavia na tichosti a nemeckej precíznosti, Electrolux na
+          škandinávskom dizajne a hodnote za peniaze. Ktorý si vybrať závisí od toho, čo vám skutočne záleží.
+        </p>
+      </div>
+
+      <div className="article-section">
+        <h2>Bosch: čo robí dobre</h2>
+        <p>
+          Bosch je synonymom pre tichú umývačku. Ich modely v strednej kategórii dosahujú <strong>42–44 dB</strong> —
+          to je hlučnosť tichej knižnice. Ak máte otvorenú kuchyňu prepojenú s obývačkou, pri Boschi nepočujete
+          nič. Pri lacnejších značkách počujete všetko.
+        </p>
+        <ul className="article-list">
+          <li><strong>Hlučnosť</strong> — 42–46 dB, najlepší výsledok v triede</li>
+          <li><strong>AquaStop</strong> — ochrana pred zaplavením zahrnutá aj v lacnejších modeloch</li>
+          <li><strong>EcoSilence Drive</strong> — bezkartáčový motor, tichší a odolnejší</li>
+          <li><strong>Varioschublade</strong> — tretí koš na príbory (dostupný od strednej triedy)</li>
+          <li><strong>Servis</strong> — hustá servisná sieť po celom Slovensku</li>
+        </ul>
+        <div className="article-tip">
+          <strong>Kde Bosch zaostáva:</strong> Cena. Za rovnakú výbavu zaplatíte o 50–100 € viac než pri Electroluxe.
+          Dizajn ovládacieho panela je konzervatívnejší.
+        </div>
+      </div>
+
+      <div className="article-section">
+        <h2>Electrolux: čo robí dobre</h2>
+        <p>
+          Electrolux ponúka výborne vybavené umývačky za nižšiu cenu ako Bosch. Škandinávsky dizajn je čistý
+          a moderný — ovládacie panely sú intuitívnejšie než u Boschu. Výkon umývania je porovnateľný.
+        </p>
+        <ul className="article-list">
+          <li><strong>Cena</strong> — o 50–100 € lacnejšie za porovnateľnú výbavu</li>
+          <li><strong>AirDry</strong> — automatické otvorenie dvierok po skončení — riad vyschne bez kondenzácie</li>
+          <li><strong>ComfortLift</strong> — spodný kôš sa dá zdvihnúť na pohodlnú výšku (prémiové modely)</li>
+          <li><strong>Dizajn</strong> — čistejší, modernejší vzhľad ovládania</li>
+          <li><strong>Spotreba vody</strong> — v eco programe veľmi konkurencieschopná</li>
+        </ul>
+        <div className="article-tip">
+          <strong>Kde Electrolux zaostáva:</strong> Hlučnosť — bežné modely sú o 2–4 dB hlasnejšie ako Bosch.
+          V otvorenej kuchyni to počuť.
+        </div>
+      </div>
+
+      <div className="article-section">
+        <h2>Priame porovnanie parametrov</h2>
+        <div className="article-table-wrap">
+          <table className="article-table">
+            <thead>
+              <tr>
+                <th>Parameter</th>
+                <th>Bosch</th>
+                <th>Electrolux</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Hlučnosť (stredná trieda)</td><td><strong>42–44 dB</strong></td><td>44–48 dB</td></tr>
+              <tr><td>Ochrana pred zaplavením</td><td>AquaStop (štandard)</td><td>Áno (vyššie modely)</td></tr>
+              <tr><td>Sušenie</td><td>Kondenzačné</td><td>AirDry (otvorenie dvierok)</td></tr>
+              <tr><td>Tretí koš na príbory</td><td>Od strednej triedy</td><td>Od vyššej triedy</td></tr>
+              <tr><td>Spotreba energie (A-rated)</td><td>~0,87 kWh/cyklus</td><td>~0,84 kWh/cyklus</td></tr>
+              <tr><td>Spotreba vody (eco)</td><td>~9,5 l</td><td>~9 l</td></tr>
+              <tr><td>Cena (stredná trieda)</td><td>450–650 €</td><td>350–550 €</td></tr>
+              <tr><td>Záručný servis SR</td><td>Výborný</td><td>Dobrý</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div className="article-section">
+        <h2>Kedy zvoliť Bosch</h2>
+        <ul className="article-list">
+          <li><strong>Otvorená kuchyňa prepojená s obývačkou</strong> — pri Boschi nepočujete umývačku ani pri rozhovore</li>
+          <li><strong>Chcete AquaStop pri každom modeli</strong> — pri Electroluxe ho nájdete len vo vyšších radoch</li>
+          <li><strong>Dlhodobá investícia</strong> — Bosch má mierne lepšiu povesť spoľahlivosti pri intenzívnom používaní</li>
+          <li><strong>Tretí koš je priorita</strong> — dostupný od nižšej ceny ako u konkurencie</li>
+        </ul>
+      </div>
+
+      <div className="article-section">
+        <h2>Kedy zvoliť Electrolux</h2>
+        <ul className="article-list">
+          <li><strong>Rozpočet do 450 €</strong> — za túto cenu dostanete od Electroluxu výrazne lepšiu výbavu</li>
+          <li><strong>AirDry je pre vás dôležité</strong> — riad po umytí skutočne vyschne, Bosch to nerobí štandardne</li>
+          <li><strong>Dizajn je priorita</strong> — modernejší, čistejší vzhľad ovládania</li>
+          <li><strong>Uzavretá kuchyňa</strong> — rozdiel 3–4 dB v hlučnosti nepocítite cez zatvorené dvere</li>
+        </ul>
+      </div>
+
+      <div className="article-section">
+        <h2>Odporúčania podľa rozpočtu</h2>
+        <div className="article-budget-grid">
+          <div className="article-budget-card">
+            <span className="article-budget-label">Do 400 €</span>
+            <h3>Electrolux vyhrá</h3>
+            <p>V tejto cenovej kategórii ponúka Electrolux lepšiu výbavu. Bosch za túto cenu predáva len základné modely bez tretieho koša.</p>
+          </div>
+          <div className="article-budget-card article-budget-featured">
+            <span className="article-budget-label">400–600 €</span>
+            <h3>Záleží na prioritách</h3>
+            <p>Bosch pre tiché prostredie a AquaStop. Electrolux pre AirDry, dizajn a úsporu 50–80 €. Oba sú výbornou voľbou.</p>
+          </div>
+          <div className="article-budget-card">
+            <span className="article-budget-label">600 € a viac</span>
+            <h3>Oba sú výborné</h3>
+            <p>V tejto kategórii sa rozdiel zmenšuje. Bosch Série 6/8 vs Electrolux 700/900 — rozhodujte podľa funkcií, nie značky.</p>
+          </div>
+        </div>
+      </div>
+
+      <div className="article-section">
+        <h2>Záver: ako sa rozhodnúť</h2>
+        <ul className="article-checklist">
+          <li><span className="check-icon">✓</span> Otvorená kuchyňa alebo na tichosti záleží → <strong>Bosch</strong></li>
+          <li><span className="check-icon">✓</span> Rozpočet do 450 € → <strong>Electrolux</strong></li>
+          <li><span className="check-icon">✓</span> AirDry sušenie je priorita → <strong>Electrolux</strong></li>
+          <li><span className="check-icon">✓</span> AquaStop vo všetkých modeloch → <strong>Bosch</strong></li>
+          <li><span className="check-icon">✓</span> Modernejší dizajn ovládania → <strong>Electrolux</strong></li>
+          <li><span className="check-icon">✓</span> Tretí koš za rozumnú cenu → <strong>Bosch</strong></li>
+        </ul>
+      </div>
+
+    </article>
+  )
+}
+
 const articleComponents = {
   'ako-vybrat-vstavanu-ruru': ArticleRura,
   'rozmery-pre-zabudovanie-checklist': ArticleRozmery,
   'pracka-susicka-alebo-kombinacia': ArticlePrackaSusicka,
+  'bosch-vs-electrolux-umyvacky': ArticleBoschElectrolux,
 }
 
 export default function ArticlePage() {
