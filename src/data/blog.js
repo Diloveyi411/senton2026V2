@@ -20,6 +20,7 @@ export const articles = [
     title: 'Rozmery pre zabudovanie: checklist pred kúpou',
     perex: 'Zmerali ste výklenok? Skontrolujte týchto 8 rozmerov pred objednaním vstavaného spotrebiča. Ušetríte si problémy.',
     readTime: '4 min čítania',
+    heroImg: '/blog-rozmery-zabudovanie.png',
   },
   {
     slug: 'najcastejsie-chyby-pri-vybere-chladnicky',
