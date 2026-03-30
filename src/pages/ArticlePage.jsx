@@ -736,6 +736,110 @@ function ArticleChladnicky() {
   )
 }
 
+function ArticleOdvoz() {
+  return (
+    <article className="article-body">
+
+      <div className="article-section">
+        <p className="article-intro">
+          Nový spotrebič prinesieme, starý odnesieme. Ale kedy je odvoz zahrnutý v cene, kedy sa priplatí
+          a čo sa so starým spotrebičom stane? Tu je všetko, čo potrebujete vedieť vopred.
+        </p>
+      </div>
+
+      <div className="article-section">
+        <h2>Kedy je odvoz zadarmo?</h2>
+        <p>
+          Pri väčšine objednávok s dovozom a inštaláciou od Sentonu zahŕňame odvoz starého spotrebiča
+          <strong> bez príplatku</strong>. Platí to pri štandardných spotrebičoch — chladnička, práčka,
+          sušička, umývačka, rúra.
+        </p>
+        <div className="article-tip">
+          Odvoz starého spotrebiča je zadarmo, ak si objednávate dopravu s vynáškou. Pri doručení
+          "pred dvere" (bez inštalácie) odvoz nie je súčasťou služby.
+        </div>
+      </div>
+
+      <div className="article-section">
+        <h2>Čo so starým spotrebičom urobíme?</h2>
+        <p>
+          Senton spolupracuje s autorizovanými zberňami elektroodpadu. Starý spotrebič odovzdávame
+          na <strong>ekologickú likvidáciu</strong> v súlade so zákonom o odpadoch. Dostanete potvrdenie
+          o odovzdaní, ak ho potrebujete.
+        </p>
+        <ul className="article-list">
+          <li>Spotrebič sa nelikviduje na skládke</li>
+          <li>Chladivá a oleje sa ekologicky spracúvajú</li>
+          <li>Kovy a plasty putujú do recyklácie</li>
+          <li>Na požiadanie vystavíme doklad o ekologickej likvidácii</li>
+        </ul>
+      </div>
+
+      <div className="article-section">
+        <h2>Ako to prebieha v praxi</h2>
+        <div className="article-checklist-numbered">
+          <div className="article-check-item">
+            <div className="check-num">1</div>
+            <div>
+              <strong>Objednávka s odvozom</strong>
+              <p>Pri objednávaní uvediete, že chcete odviezť starý spotrebič. Dohodne sa pri telefonickej potvrdzovaní.</p>
+            </div>
+          </div>
+          <div className="article-check-item">
+            <div className="check-num">2</div>
+            <div>
+              <strong>Pripravte spotrebič</strong>
+              <p>Chladničku a mrazničku vypnite 24 hodín vopred. Práčku nechajte odčerpať a odpojiť od prívodu vody.</p>
+            </div>
+          </div>
+          <div className="article-check-item">
+            <div className="check-num">3</div>
+            <div>
+              <strong>Doručenie a výmena</strong>
+              <p>Technici prinesú nový spotrebič, nainštalujú ho a odnesú starý v rámci tej istej návštevy.</p>
+            </div>
+          </div>
+          <div className="article-check-item">
+            <div className="check-num">4</div>
+            <div>
+              <strong>Ekologická likvidácia</strong>
+              <p>Starý spotrebič odovzdáme do autorizovanej zberne. Nič nemusíte riešiť.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="article-section">
+        <h2>Na čo si dať pozor</h2>
+        <div className="article-table-wrap">
+          <table className="article-table">
+            <thead>
+              <tr><th>Situácia</th><th>Postup</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Spotrebič je v suteréne alebo na poschodí bez výťahu</td><td>Informujte nás vopred — môže sa priplatkovať za sťahovanie</td></tr>
+              <tr><td>Vstavaný spotrebič treba demonterovať</td><td>Dohodnutie vopred, technik prinesie náradie</td></tr>
+              <tr><td>Chcete si starý spotrebič nechať</td><td>Povedzte to pri objednávke — neodvezieme ho</td></tr>
+              <tr><td>Spotrebič obsahuje freón (staré chladničky)</td><td>Ekologicky spracujeme, nevyžaduje extra kroky od vás</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div className="article-section">
+        <h2>Checklist pred dňom doručenia</h2>
+        <ul className="article-checklist">
+          <li><span className="check-icon">✓</span> Chladnička/mraznička vypnutá 24 hodín vopred</li>
+          <li><span className="check-icon">✓</span> Práčka odčerpaná, hadice voľné</li>
+          <li><span className="check-icon">✓</span> Spotrebič prístupný — voľná cesta od vchodu k miestu inštalácie</li>
+          <li><span className="check-icon">✓</span> Informovaní o prípadných prekážkach (schody, úzky vchod)</li>
+        </ul>
+      </div>
+
+    </article>
+  )
+}
+
 function ArticleEnergetickaTrieda() {
   return (
     <article className="article-body">
@@ -951,6 +1055,7 @@ const articleComponents = {
   'najcastejsie-chyby-pri-vybere-chladnicky': ArticleChladnicky,
   'kuchynsky-set-ako-setrit': ArticleKuchynskySet,
   'energeticka-trieda-spotrebice-2026': ArticleEnergetickaTrieda,
+  'odvoz-stareho-spotrebica-ako-funguje': ArticleOdvoz,
 }
 
 export default function ArticlePage() {
