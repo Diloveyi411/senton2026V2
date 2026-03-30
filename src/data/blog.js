@@ -37,6 +37,8 @@ export const articles = [
     title: 'Práčka a sušička alebo kombinácia? Čo sa oplatí viac?',
     perex: 'Kombinácia šetrí miesto, ale oplatí sa to? Porovnáme výhody, nevýhody a typické situácie pre každý typ.',
     readTime: '5 min čítania',
+    heroImg: '/blog-pracka-susicka.png',
+    heroImgFit: 'cover',
   },
   {
     slug: 'kuchynsky-set-ako-setrit',
