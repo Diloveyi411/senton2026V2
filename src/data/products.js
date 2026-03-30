@@ -1,4 +1,4 @@
-const shopReviews = [
+export const shopReviews = [
   { text: 'Som veľmi spokojná. Komunikácia na vysokej profesionálnej úrovni. Môžem každému odporučiť nakupovať cez obchod SENTON. Nemám žiadnu výhradu.', author: 'Emília, overená zákazníčka Heureka', stars: 5 },
   { text: 'Rýchle doručenie, bezchybne zabalené. Pri tovare bolo dokonca príslušenstvo, ktoré v popise nebolo. Najlepšia cena.', author: 'Lenka, overená zákazníčka Heureka', stars: 5 },
   { text: 'Tovar dorazil za 1 deň. Prehľadnosť tovaru, rýchle vybavenie objednávky, výborná komunikácia obchodu.', author: 'Miroslav, overený zákazník Heureka', stars: 5 },

@@ -9,13 +9,6 @@ function FacebookIcon() {
   )
 }
 
-function InstagramIcon() {
-  return (
-    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-      <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
-    </svg>
-  )
-}
 
 export default function Footer() {
   return (
@@ -38,8 +31,10 @@ export default function Footer() {
             <h4>Senton</h4>
             <ul>
               <li><Link to="/o-nas">O nás</Link></li>
-              <li><Link to="/preco-u-nas">Prečo u nás</Link></li>
-              <li><Link to="/referencie">Referencie Heureka</Link></li>
+              <li><Link to={{ pathname: '/', hash: '#preco-u-nas' }}>Prečo u nás</Link></li>
+              <li><Link to={{ pathname: '/', hash: '#recenzie' }}>Referencie Heureka</Link></li>
+              <li><Link to="/poradenstvo">Poradenstvo</Link></li>
+              <li><Link to="/blog">Blog</Link></li>
             </ul>
           </div>
 
@@ -48,18 +43,13 @@ export default function Footer() {
             <ul>
               <li><Link to="/ako-nakupovat">Ako nakupovať</Link></li>
               <li><Link to="/doprava">Doprava a poštovné</Link></li>
-              <li><Link to="/vratenie">Vrátenie tovaru</Link></li>
+              <li><Link to={{ pathname: '/obchodne-podmienky', hash: '#cl6' }}>Vrátenie tovaru</Link></li>
               <li><Link to="/obchodne-podmienky">Obchodné podmienky</Link></li>
             </ul>
           </div>
 
           <div className="footer-col">
-            <h4>Poradenstvo & Blog</h4>
-            <ul>
-              <li><Link to="/poradenstvo">Poradenstvo</Link></li>
-              <li><Link to="/blog">Blog</Link></li>
-            </ul>
-            <h4 style={{ marginTop: 24 }}>Kontakt</h4>
+            <h4>Kontakt</h4>
             <ul>
               <li className="footer-contact-item">
                 <span>Telefón</span>
@@ -75,15 +65,17 @@ export default function Footer() {
                   Kosatcová 2, 040 01 Košice
                 </a>
               </li>
+              <li>
+                <Link to="/kontakt" className="footer-contact-detail-link">Fakturačné údaje a mapa →</Link>
+              </li>
             </ul>
-            <div className="footer-socials">
-              <a href="https://facebook.com" target="_blank" rel="noreferrer" className="footer-social-btn" aria-label="Facebook">
-                <FacebookIcon />
-              </a>
-              <a href="https://instagram.com" target="_blank" rel="noreferrer" className="footer-social-btn" aria-label="Instagram">
-                <InstagramIcon />
-              </a>
-            </div>
+          </div>
+
+          <div className="footer-social-col">
+            <h4>Sledujte nás</h4>
+            <a href="https://www.facebook.com/profile.php?id=100032389136237" target="_blank" rel="noreferrer" className="footer-social-btn" aria-label="Facebook">
+              <FacebookIcon />
+            </a>
           </div>
 
         </div>

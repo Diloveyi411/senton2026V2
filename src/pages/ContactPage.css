@@ -1,0 +1,286 @@
+.contact-page {
+  padding: 40px 0 80px;
+}
+
+.contact-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--muted);
+  margin-bottom: 48px;
+  font-family: var(--font-ui);
+}
+
+.contact-breadcrumb a { color: var(--muted); text-decoration: none; transition: color 0.15s; }
+.contact-breadcrumb a:hover { color: var(--blue); }
+
+/* Header */
+.contact-header {
+  max-width: 520px;
+  margin-bottom: 48px;
+}
+
+.contact-eyebrow {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--blue);
+  margin-bottom: 14px;
+  font-family: var(--font-ui);
+}
+
+.contact-title {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: clamp(28px, 4vw, 44px);
+  color: var(--ink);
+  line-height: 1.08;
+  letter-spacing: -1px;
+  margin-bottom: 14px;
+}
+
+.contact-desc {
+  font-size: 17px;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+/* Hlavné karty */
+.contact-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 56px;
+}
+
+.contact-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  padding: 24px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-card-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  font-family: var(--font-ui);
+}
+
+.contact-card-primary {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-ui);
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--ink);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.contact-card-primary:hover { color: var(--blue); }
+
+.contact-card-secondary {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-ui);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--muted);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.contact-card-secondary:hover { color: var(--blue); }
+
+.contact-card-hours {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.contact-hours-closed {
+  font-size: 13px;
+  color: var(--muted);
+  margin-left: 24px;
+}
+
+/* Layout */
+.contact-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 48px;
+  align-items: start;
+}
+
+.contact-info-col {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+/* Bloky */
+.contact-block {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-xl);
+  padding: 32px;
+}
+
+.contact-block h2 {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 18px;
+  color: var(--ink);
+  margin-bottom: 6px;
+  letter-spacing: -0.2px;
+}
+
+.contact-block-note {
+  font-size: 12.5px;
+  color: var(--muted);
+  margin-bottom: 24px;
+  line-height: 1.5;
+  font-style: italic;
+}
+
+/* Detail list */
+.contact-detail-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.contact-detail-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.contact-detail-icon {
+  width: 30px;
+  height: 30px;
+  background: rgba(75,110,255,0.1);
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--blue);
+  flex-shrink: 0;
+}
+
+.contact-detail-row > div {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  font-size: 14px;
+  color: var(--ink);
+  line-height: 1.5;
+}
+
+.contact-detail-row a {
+  color: var(--ink);
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.15s;
+}
+
+.contact-detail-row a:hover { color: var(--blue); }
+
+/* Fakturačné údaje */
+.contact-invoice-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.contact-invoice-col {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.contact-invoice-label {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  font-family: var(--font-ui);
+  margin-top: 10px;
+}
+
+.contact-invoice-col > .contact-invoice-label:first-child { margin-top: 0; }
+
+.contact-invoice-val {
+  font-size: 13.5px;
+  color: var(--ink);
+  font-family: var(--font-ui);
+  line-height: 1.5;
+}
+
+.contact-invoice-sub {
+  color: var(--muted);
+  font-size: 12.5px;
+}
+
+/* Mapa */
+.contact-map-col {
+  position: sticky;
+  top: 80px;
+}
+
+.contact-map {
+  height: 480px;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  border: 1px solid var(--line);
+  margin-bottom: 12px;
+}
+
+.contact-map-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--blue);
+  text-decoration: none;
+  font-family: var(--font-ui);
+  padding: 8px 0;
+  transition: opacity 0.15s;
+}
+
+.contact-map-link:hover { opacity: 0.75; }
+
+/* ═══════════════════════════════════════════
+   RESPONSIVE
+═══════════════════════════════════════════ */
+
+@media (max-width: 1024px) {
+  .contact-cards { grid-template-columns: 1fr 1fr; }
+  .contact-layout { grid-template-columns: 1fr; }
+  .contact-map-col { position: static; }
+  .contact-map { height: 320px; }
+}
+
+@media (max-width: 768px) {
+  .contact-page { padding: 24px 0 56px; }
+  .contact-cards { grid-template-columns: 1fr 1fr; gap: 10px; }
+  .contact-invoice-grid { grid-template-columns: 1fr; }
+  .contact-block { padding: 24px 20px; }
+}
+
+@media (max-width: 480px) {
+  .contact-cards { grid-template-columns: 1fr; }
+}

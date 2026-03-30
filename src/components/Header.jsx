@@ -2,15 +2,8 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { activeCategories } from '../data/categories'
 import { useCart } from '../context/CartContext'
+import SearchBar from './SearchBar'
 import './Header.css'
-
-function SearchIcon() {
-  return (
-    <svg className="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-      <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
-    </svg>
-  )
-}
 
 function PhoneIcon() {
   return (
@@ -55,12 +48,10 @@ export default function Header() {
             </button>
           </div>
 
-          <div className="header-search">
-            <SearchIcon />
-            <input type="search" placeholder="Hľadať spotrebiče..." />
-          </div>
+          <SearchBar />
 
           <div className="header-right">
+            <Link to="/kontakt" className="header-kontakt-link">Kontakt</Link>
             <a href="tel:+421905901500" className="icon-btn" title="Zavolať">
               <PhoneIcon />
             </a>

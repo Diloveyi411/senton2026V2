@@ -1,0 +1,293 @@
+.delivery-page {
+  padding: 40px 0 80px;
+}
+
+.delivery-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--muted);
+  margin-bottom: 48px;
+  font-family: var(--font-ui);
+}
+
+.delivery-breadcrumb a {
+  color: var(--muted);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.delivery-breadcrumb a:hover { color: var(--blue); }
+
+/* Header */
+.delivery-header {
+  max-width: 600px;
+  margin-bottom: 48px;
+}
+
+.delivery-eyebrow {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--blue);
+  margin-bottom: 14px;
+  font-family: var(--font-ui);
+}
+
+.delivery-title {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: clamp(28px, 4vw, 44px);
+  color: var(--ink);
+  line-height: 1.08;
+  letter-spacing: -1px;
+  margin-bottom: 16px;
+}
+
+.delivery-desc {
+  font-size: 17px;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+/* Highlight karty */
+.delivery-highlights {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 56px;
+}
+
+.delivery-highlight-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  padding: 28px 24px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+}
+
+.delivery-highlight-card.free {
+  border-color: rgba(22,163,74,0.3);
+  background: rgba(22,163,74,0.04);
+}
+
+.delivery-highlight-card.free .delivery-highlight-icon { background: rgba(22,163,74,0.12); color: #16a34a; }
+
+.delivery-highlight-icon {
+  width: 48px;
+  height: 48px;
+  background: rgba(75,110,255,0.1);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--blue);
+  flex-shrink: 0;
+}
+
+.delivery-highlight-card strong {
+  display: block;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--ink);
+  margin-bottom: 6px;
+}
+
+.delivery-highlight-card p {
+  font-size: 14px;
+  color: var(--muted);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Sekcia tabuľky */
+.delivery-section {
+  margin-bottom: 48px;
+}
+
+.delivery-section h2 {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 22px;
+  color: var(--ink);
+  letter-spacing: -0.3px;
+  margin-bottom: 6px;
+}
+
+.delivery-section-note {
+  font-size: 14px;
+  color: var(--muted);
+  margin-bottom: 24px;
+}
+
+.delivery-table-wrap {
+  overflow-x: auto;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--line);
+}
+
+.delivery-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--font-ui);
+}
+
+.delivery-table thead tr {
+  background: var(--surface);
+  border-bottom: 1px solid var(--line);
+}
+
+.delivery-table th {
+  padding: 13px 18px;
+  text-align: left;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+.delivery-table td {
+  padding: 16px 18px;
+  font-size: 14px;
+  color: var(--ink);
+  border-bottom: 1px solid var(--line);
+  vertical-align: middle;
+}
+
+.delivery-table tr:last-child td { border-bottom: none; }
+
+.delivery-table tr.row-free td { background: rgba(22,163,74,0.04); }
+
+.delivery-table tbody tr:hover td { background: var(--bg); }
+.delivery-table tr.row-free:hover td { background: rgba(22,163,74,0.07); }
+
+.delivery-service-tag {
+  display: inline-block;
+  background: rgba(75,110,255,0.1);
+  color: var(--blue);
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 9px;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+
+.delivery-area {
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.delivery-price {
+  font-weight: 800;
+  font-family: var(--font-display);
+  font-size: 16px;
+  white-space: nowrap;
+  text-align: right;
+}
+
+.row-free .delivery-price { color: #16a34a; }
+
+/* Doplňujúce info */
+.delivery-notes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 48px;
+}
+
+.delivery-note-item {
+  padding: 22px 20px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+}
+
+.delivery-note-item strong {
+  display: block;
+  font-family: var(--font-ui);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 8px;
+}
+
+.delivery-note-item p {
+  font-size: 13.5px;
+  color: var(--muted);
+  line-height: 1.65;
+  margin: 0;
+}
+
+.delivery-note-item a { color: var(--blue); text-decoration: none; }
+.delivery-note-item a:hover { text-decoration: underline; }
+
+/* CTA */
+.delivery-cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-xl);
+  padding: 32px 40px;
+  flex-wrap: wrap;
+}
+
+.delivery-cta h3 {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 20px;
+  color: var(--ink);
+  margin-bottom: 4px;
+}
+
+.delivery-cta p {
+  font-size: 14px;
+  color: var(--muted);
+  margin: 0;
+}
+
+.delivery-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 24px;
+  background: var(--orange);
+  color: #fff;
+  font-family: var(--font-ui);
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: var(--radius-md);
+  text-decoration: none;
+  white-space: nowrap;
+  flex-shrink: 0;
+  transition: background 0.15s;
+}
+
+.delivery-btn:hover { background: #e8831a; }
+
+/* ═══════════════════════════════════════════
+   RESPONSIVE
+═══════════════════════════════════════════ */
+
+@media (max-width: 1024px) {
+  .delivery-notes { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 768px) {
+  .delivery-page { padding: 24px 0 56px; }
+  .delivery-highlights { grid-template-columns: 1fr; }
+  .delivery-notes { grid-template-columns: 1fr; }
+  .delivery-cta { flex-direction: column; align-items: flex-start; padding: 24px; }
+  .delivery-btn { width: 100%; justify-content: center; }
+  .delivery-table th, .delivery-table td { padding: 12px 14px; }
+}

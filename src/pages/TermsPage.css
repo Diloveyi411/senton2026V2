@@ -1,0 +1,217 @@
+.terms-page {
+  padding: 40px 0 80px;
+}
+
+.terms-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--muted);
+  margin-bottom: 40px;
+  font-family: var(--font-ui);
+}
+
+.terms-breadcrumb a {
+  color: var(--muted);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.terms-breadcrumb a:hover { color: var(--blue); }
+
+/* Layout */
+.terms-layout {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 56px;
+  align-items: start;
+}
+
+/* TOC Sidebar */
+.terms-toc {
+  position: sticky;
+  top: 80px;
+}
+
+.terms-toc-inner {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+}
+
+.terms-toc-title {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 12px;
+}
+
+.terms-toc ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.terms-toc-link {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 7px 10px;
+  font-size: 12.5px;
+  color: var(--muted);
+  background: none;
+  border: none;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  font-family: var(--font-ui);
+  line-height: 1.4;
+  transition: color 0.15s, background 0.15s;
+}
+
+.terms-toc-link:hover { color: var(--ink); background: var(--bg); }
+.terms-toc-link.active { color: var(--blue); background: rgba(75,110,255,0.08); font-weight: 600; }
+
+/* Doc header */
+.terms-doc-header {
+  margin-bottom: 48px;
+  padding-bottom: 32px;
+  border-bottom: 2px solid var(--ink);
+}
+
+.terms-doc-header h1 {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: clamp(26px, 3vw, 36px);
+  color: var(--ink);
+  letter-spacing: -0.5px;
+  margin-bottom: 8px;
+}
+
+.terms-valid {
+  font-size: 13px;
+  color: var(--muted);
+  font-family: var(--font-ui);
+}
+
+/* Sections */
+.terms-section {
+  margin-bottom: 48px;
+  padding-bottom: 48px;
+  border-bottom: 1px solid var(--line);
+  scroll-margin-top: 100px;
+}
+
+.terms-section:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.terms-section h2 {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 20px;
+  color: var(--ink);
+  letter-spacing: -0.3px;
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--line);
+}
+
+.terms-section p {
+  font-size: 14.5px;
+  color: var(--ink);
+  line-height: 1.75;
+  margin-bottom: 14px;
+}
+
+.terms-section p:last-child { margin-bottom: 0; }
+
+.terms-section ol {
+  margin: 0 0 14px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.terms-section li {
+  font-size: 14.5px;
+  color: var(--ink);
+  line-height: 1.7;
+}
+
+.terms-section a {
+  color: var(--blue);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.terms-section a:hover { opacity: 0.8; }
+
+/* Infobox */
+.terms-infobox {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--blue);
+  border-radius: var(--radius-md);
+  padding: 16px 20px;
+  margin: 14px 0;
+}
+
+.terms-infobox p {
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+.terms-infobox p:last-child { margin-bottom: 0; }
+
+/* Downloads */
+.terms-downloads {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.terms-download-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 18px;
+  background: var(--surface);
+  border: 1.5px solid var(--line);
+  border-radius: var(--radius-md);
+  text-decoration: none;
+  color: var(--ink);
+  font-family: var(--font-ui);
+  font-size: 13.5px;
+  font-weight: 600;
+  transition: border-color 0.15s, background 0.15s, color 0.15s;
+}
+
+.terms-download-btn:hover {
+  border-color: var(--blue);
+  color: var(--blue);
+  background: rgba(75,110,255,0.04);
+}
+
+.terms-download-btn svg { flex-shrink: 0; }
+
+/* ═══════════════════════════════════════════
+   RESPONSIVE
+═══════════════════════════════════════════ */
+
+@media (max-width: 1024px) {
+  .terms-layout { grid-template-columns: 1fr; }
+  .terms-toc { display: none; }
+}
+
+@media (max-width: 768px) {
+  .terms-page { padding: 24px 0 56px; }
+  .terms-downloads { grid-template-columns: 1fr; }
+  .terms-section h2 { font-size: 18px; }
+}

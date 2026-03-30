@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback } from 'react'
 import { Link } from 'react-router-dom'
 import { activeCategories } from '../data/categories'
-import { products } from '../data/products'
+import { products, shopReviews } from '../data/products'
 import CallbackModal from '../components/CallbackModal'
 import './HomePage.css'
 
@@ -37,6 +37,9 @@ function IconPhone() {
 }
 function IconCheck() {
   return <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+}
+function IconStar({ size = 15 }) {
+  return <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
 }
 
 // ── Ikony kategórií ───────────────────────────────────────
@@ -227,7 +230,7 @@ export default function HomePage() {
       </section>
 
       {/* ── Prečo u nás ── */}
-      <section className="why-section">
+      <section className="why-section" id="preco-u-nas">
         <div className="container">
           <div className="section-header">
             <div className="section-eyebrow">Prečo Senton</div>
@@ -241,6 +244,72 @@ export default function HomePage() {
                 <p>{item.desc}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── Heureka recenzie ── */}
+      <section className="reviews-section" id="recenzie">
+        <div className="container">
+          <div className="reviews-header">
+            <div>
+              <div className="section-eyebrow">Overené zákazníkmi</div>
+              <h2 className="section-title">Čo hovoria naši zákazníci</h2>
+            </div>
+            <a
+              href="https://obchody.heureka.sk/senton-sk/recenze/overene"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="heureka-badge"
+            >
+              <span className="heureka-badge-logo">heureka</span>
+              <span className="heureka-badge-score">4,9 / 5</span>
+            </a>
+          </div>
+
+          <div className="reviews-stats">
+            {[
+              { val: '4,9', label: 'Hodnotenie', sub: 'z 5 bodov' },
+              { val: '1 931', label: 'Recenzií', sub: 'overených zákazníkov' },
+              { val: '100 %', label: 'Odporúča', sub: 'nákup u nás' },
+              { val: '2,3 dňa', label: 'Priemerné doručenie', sub: 'od objednávky' },
+            ].map((s, i) => (
+              <div key={i} className="reviews-stat">
+                <strong>{s.val}</strong>
+                <span>{s.label}</span>
+                <span className="reviews-stat-sub">{s.sub}</span>
+              </div>
+            ))}
+          </div>
+
+          <div className="reviews-grid">
+            {shopReviews.map((r, i) => (
+              <div key={i} className="review-card">
+                <div className="review-stars">
+                  {Array.from({ length: r.stars }).map((_, j) => (
+                    <span key={j} className="review-star"><IconStar size={14} /></span>
+                  ))}
+                </div>
+                <p className="review-text">"{r.text}"</p>
+                <div className="review-author">
+                  <span className="review-author-name">{r.author.split(',')[0]}</span>
+                  <span className="review-author-badge">
+                    <IconCheck /> overená recenzia
+                  </span>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div className="reviews-footer">
+            <a
+              href="https://obchody.heureka.sk/senton-sk/recenze/overene"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="reviews-all-link"
+            >
+              Zobraziť všetky recenzie na Heureka <IconArrow />
+            </a>
           </div>
         </div>
       </section>
