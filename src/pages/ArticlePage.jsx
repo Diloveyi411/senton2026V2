@@ -736,6 +736,95 @@ function ArticleChladnicky() {
   )
 }
 
+function ArticleUmyvacka() {
+  return (
+    <article className="article-body">
+
+      <div className="article-section">
+        <p className="article-intro">
+          Nemáte miesto na klasickú 60 cm umývačku? Existujú tri riešenia — a každé sa hodí na inú situáciu.
+          Porovnáme rozmery, kapacity a odporúčame konkrétne modely.
+        </p>
+      </div>
+
+      <div className="article-section">
+        <h2>Tri typy umývačiek podľa veľkosti</h2>
+        <div className="article-clean-grid">
+          <div className="article-clean-card">
+            <h3>Plnorozmerná 60 cm</h3>
+            <p>Štandard. 12–14 súprav riadu, vstavaná pod pracovnú dosku. Potrebuje 60 cm šírky a prívod vody + odpad.</p>
+            <span className="article-clean-price">od 350 €</span>
+          </div>
+          <div className="article-clean-card">
+            <h3>Úzka 45 cm</h3>
+            <p>O 15 cm užšia, kapacita 9–10 súprav. Ideálna pre 1–2 osoby alebo kuchyňu kde chýba tých 15 cm.</p>
+            <span className="article-clean-price">od 320 €</span>
+          </div>
+          <div className="article-clean-card">
+            <h3>Stolová (mini)</h3>
+            <p>Stojí na linke, nepotrebuje inštaláciu. Kapacita 4–6 súprav. Pre single alebo ako dočasné riešenie.</p>
+            <span className="article-clean-price">od 250 €</span>
+          </div>
+        </div>
+      </div>
+
+      <div className="article-section">
+        <h2>Rozmery, ktoré treba zmerať</h2>
+        <ul className="article-list">
+          <li><strong>Šírka výklenku:</strong> štandard 60 cm, pri úzkej umývačke 45 cm — zmerajte na mm presne</li>
+          <li><strong>Výška pod pracovnou doskou:</strong> min. 82 cm pre vstavaný model</li>
+          <li><strong>Hĺbka skrinky:</strong> väčšina umývačiek má hĺbku 55–60 cm, skontrolujte panel kuchyne</li>
+          <li><strong>Prívod vody a odpad:</strong> musia byť v dosahu hadíc (zvyčajne 1,5 m)</li>
+        </ul>
+        <div className="article-tip">
+          Ak nemáte prívod vody priamo pri umývačke, stolová umývačka sa dá napojiť na kohútik — žiadna
+          inštalácia nie je potrebná.
+        </div>
+      </div>
+
+      <div className="article-section">
+        <h2>Komu sa hodí ktorý typ</h2>
+        <div className="article-table-wrap">
+          <table className="article-table">
+            <thead>
+              <tr><th>Situácia</th><th>Odporúčaný typ</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Rodina 3–4 osoby, bežná kuchyňa</td><td>Plnorozmerná 60 cm</td></tr>
+              <tr><td>Pár alebo single, kuchyňa s menším výklenkom</td><td>Úzka 45 cm</td></tr>
+              <tr><td>Malý byt, nájom, žiadna inštalácia</td><td>Stolová</td></tr>
+              <tr><td>Chata alebo dočasné bývanie</td><td>Stolová</td></tr>
+              <tr><td>Malá kuchyňa, ale 3+ osoby</td><td>Plnorozmerná 60 cm — hľadajte priestor</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div className="article-section">
+        <h2>Na čo ešte nezabudnúť</h2>
+        <ul className="article-list">
+          <li><strong>Hlučnosť:</strong> pre otvorenú kuchyňu hľadajte pod 44 dB, ideálne 40–42 dB</li>
+          <li><strong>Programy:</strong> rýchlý program (30–45 min) je must-have pre každodenné použitie</li>
+          <li><strong>Energetická trieda:</strong> min. D, ideálne C — umývačka sa zapína denne</li>
+          <li><strong>Výška košov:</strong> nastaviteľný horný kôš umožní umývanie vysokých fliaš</li>
+        </ul>
+      </div>
+
+      <div className="article-section">
+        <h2>Checklist pred kúpou</h2>
+        <ul className="article-checklist">
+          <li><span className="check-icon">✓</span> Zmerané rozmery výklenku (šírka, výška, hĺbka)</li>
+          <li><span className="check-icon">✓</span> Overený prívod vody a odpad v dosahu</li>
+          <li><span className="check-icon">✓</span> Kapacita zodpovedá počtu osôb v domácnosti</li>
+          <li><span className="check-icon">✓</span> Hlučnosť max. 44 dB pre obytný priestor</li>
+          <li><span className="check-icon">✓</span> Energetická trieda min. D (ideálne C)</li>
+        </ul>
+      </div>
+
+    </article>
+  )
+}
+
 function ArticleOdvoz() {
   return (
     <article className="article-body">
@@ -1056,6 +1145,7 @@ const articleComponents = {
   'kuchynsky-set-ako-setrit': ArticleKuchynskySet,
   'energeticka-trieda-spotrebice-2026': ArticleEnergetickaTrieda,
   'odvoz-stareho-spotrebica-ako-funguje': ArticleOdvoz,
+  'umyvacka-riadu-do-malej-kuchyne': ArticleUmyvacka,
 }
 
 export default function ArticlePage() {
