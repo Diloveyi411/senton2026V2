@@ -136,7 +136,7 @@ export default function HomePage() {
             </div>
             <div className="hero-trust">
               {[
-                { val: '2,3 dna', label: 'Priem. dodanie' },
+                { val: '2,3 dňa', label: 'Priem. dodanie' },
                 { val: '0 €',     label: 'Doprava' },
                 { val: '35 r.',   label: 'Skúsenosti' },
                 { val: '4,9★',   label: '1 931 recenzií' },
