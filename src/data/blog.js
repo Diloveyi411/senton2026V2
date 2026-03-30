@@ -5,6 +5,7 @@ export const articles = [
     title: 'Ako vybrať vstavanú rúru v roku 2026',
     perex: 'Rozmery, energetická trieda, typ čistenia a čo porovnať pred kúpou. Kompletný sprievodca pre každého.',
     readTime: '6 min čítania',
+    heroImg: '/blog-vstavana-rura.png',
   },
   {
     slug: 'bosch-vs-electrolux-umyvacky',

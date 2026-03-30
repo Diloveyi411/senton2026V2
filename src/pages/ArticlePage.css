@@ -66,6 +66,26 @@
   left: -22px;
 }
 
+/* ── Hero image ── */
+.article-hero-img-wrap {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 0 24px 0;
+}
+
+.article-hero-img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 20px;
+  display: block;
+}
+
+@media (max-width: 640px) {
+  .article-hero-img { height: 220px; border-radius: 12px; }
+}
+
 /* ── Layout ── */
 .article-main {
   padding: 56px 0 80px;

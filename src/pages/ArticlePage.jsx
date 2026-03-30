@@ -366,6 +366,12 @@ export default function ArticlePage() {
         </div>
       </section>
 
+      {meta.heroImg && (
+        <div className="article-hero-img-wrap">
+          <img src={meta.heroImg} alt={meta.title} className="article-hero-img" />
+        </div>
+      )}
+
       <section className="article-main">
         <div className="container article-layout">
           <Content />
