@@ -196,18 +196,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── Social proof bar ── */}
-      <section className="brands-bar">
-        <div className="container brands-bar-inner">
-          <span className="brands-bar-label">Predávame značky</span>
-          <div className="brands-list">
-            {brands.map(b => (
-              <span key={b} className="brand-item">{b}</span>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* ── Kategórie ── */}
       <section className="categories-section">
         <div className="container">
@@ -224,6 +212,18 @@ export default function HomePage() {
                 <span className="category-label">{cat.label}</span>
                 <span className="category-arrow"><IconArrow /></span>
               </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── Social proof bar ── */}
+      <section className="brands-bar">
+        <div className="container brands-bar-inner">
+          <span className="brands-bar-label">Predávame značky</span>
+          <div className="brands-list">
+            {brands.map(b => (
+              <span key={b} className="brand-item">{b}</span>
             ))}
           </div>
         </div>
