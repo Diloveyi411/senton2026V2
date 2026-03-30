@@ -736,6 +736,105 @@ function ArticleChladnicky() {
   )
 }
 
+function ArticleEnergetickaTrieda() {
+  return (
+    <article className="article-body">
+
+      <div className="article-section">
+        <p className="article-intro">
+          Od roku 2021 platí nové označenie energetických tried A až G. Staré A+++, A++, A+ zmizli —
+          a väčšina spotrebičov, ktoré boli "A+++", je dnes zaradená do triedy C alebo D. Vysvetlíme prečo a čo to znamená pre váš výber.
+        </p>
+      </div>
+
+      <div className="article-section">
+        <h2>Prečo sa zmenilo označenie?</h2>
+        <p>
+          Staré stupnice A+++ až D boli príliš zahustené na vrchole — takmer každý spotrebič bol "A niečo".
+          Zákazníci nemali reálne porovnanie. Európska únia preto zaviedla novú škálu, kde <strong>trieda A je rezervovaná
+          pre budúce, ešte úspornejšie technológie</strong> — v roku 2026 je trh A zatiaľ prakticky prázdny.
+        </p>
+        <div className="article-tip">
+          Ak vidíte spotrebič označený A+++ — je to starý štítok pred rokom 2021. Dnes by bol zaradený zhruba do triedy B–C.
+        </div>
+      </div>
+
+      <div className="article-section">
+        <h2>Nová škála A až G: čo znamená každá trieda</h2>
+        <div className="article-energy-grid">
+          <div className="article-energy-row">
+            <div className="energy-badge energy-a">A</div>
+            <div><strong>Najúspornejšia</strong> — zatiaľ takmer nedostupná na trhu. Rezerva pre budúce technológie.</div>
+          </div>
+          <div className="article-energy-row">
+            <div className="energy-badge energy-b">B</div>
+            <div><strong>Výborná</strong> — prémiové modely, najlepšia voľba ak vám záleží na spotrebe.</div>
+          </div>
+          <div className="article-energy-row">
+            <div className="energy-badge energy-b" style={{background:'#84cc16'}}>C</div>
+            <div><strong>Dobrá</strong> — väčšina strednej triedy. Rozumný pomer ceny a spotreby.</div>
+          </div>
+          <div className="article-energy-row">
+            <div className="energy-badge energy-c">D</div>
+            <div><strong>Priemerná</strong> — bežné modely. Nie zlé, ale vyššia spotreba ako C.</div>
+          </div>
+          <div className="article-energy-row">
+            <div className="energy-badge energy-d">E–G</div>
+            <div><strong>Podpriemer</strong> — starší dizajn alebo lacné modely. Dlhodobo drahé na prevádzku.</div>
+          </div>
+        </div>
+      </div>
+
+      <div className="article-section">
+        <h2>Trieda podľa typu spotrebiča</h2>
+        <p>Každý typ spotrebiča má inú škálu — neporovnávajte chladničku s práčkou.</p>
+        <div className="article-table-wrap">
+          <table className="article-table">
+            <thead>
+              <tr><th>Spotrebič</th><th>Odporúčaná min. trieda</th><th>Ideál</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Chladnička / mraznička</td><td>C</td><td>B</td></tr>
+              <tr><td>Práčka</td><td>C</td><td>B</td></tr>
+              <tr><td>Sušička</td><td>C</td><td>B</td></tr>
+              <tr><td>Umývačka riadu</td><td>D</td><td>C</td></tr>
+              <tr><td>Vstavaná rúra</td><td>A (starý štítok) / C (nový)</td><td>B (nový)</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div className="article-section">
+        <h2>Oplatí sa priplatiť za vyššiu triedu?</h2>
+        <p>
+          Záleží na type spotrebiča. Chladnička beží 24 hodín denne — rozdiel medzi triedou C a E je
+          pri 300 l modeli asi <strong>20–25 € ročne</strong>. Za 15 rokov životnosti je to 300–375 €.
+        </p>
+        <p>
+          Práčka a umývačka bežia len niekoľko hodín denne — úspora na triede je menej dramatická, typicky
+          <strong>5–15 € ročne</strong>. Tu rozhoduje skôr cena a funkcie ako trieda.
+        </p>
+        <div className="article-tip">
+          <strong>Pravidlo:</strong> Pri spotrebičoch, ktoré bežia stále (chladnička, mraznička), investujte do vyššej triedy.
+          Pri ostatných uprednostnite funkcie a spoľahlivosť značky.
+        </div>
+      </div>
+
+      <div className="article-section">
+        <h2>Ako čítať nový energetický štítok</h2>
+        <ul className="article-list">
+          <li><strong>QR kód</strong> — odkazuje na európsku databázu EPREL s detailnými parametrami</li>
+          <li><strong>Šípka s triedou</strong> — poloha na stupnici A–G, farebne odlíšená</li>
+          <li><strong>Spotreba v kWh</strong> — ročná (chladnička) alebo na cyklus (práčka, umývačka)</li>
+          <li><strong>Hlučnosť v dB</strong> — dôležité najmä pri práčke a umývačke v otvorenom dispozícii</li>
+          <li><strong>Kapacita</strong> — v litroch (chladnička) alebo kg (práčka)</li>
+        </ul>
+      </div>
+
+    </article>
+  )
+}
+
 function ArticleKuchynskySet() {
   return (
     <article className="article-body">
@@ -851,6 +950,7 @@ const articleComponents = {
   'bosch-vs-electrolux-umyvacky': ArticleBoschElectrolux,
   'najcastejsie-chyby-pri-vybere-chladnicky': ArticleChladnicky,
   'kuchynsky-set-ako-setrit': ArticleKuchynskySet,
+  'energeticka-trieda-spotrebice-2026': ArticleEnergetickaTrieda,
 }
 
 export default function ArticlePage() {
