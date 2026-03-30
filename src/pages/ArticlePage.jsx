@@ -329,9 +329,144 @@ function ArticleRozmery() {
   )
 }
 
+function ArticlePrackaSusicka() {
+  return (
+    <article className="article-body">
+
+      <div className="article-section">
+        <p className="article-intro">
+          Práčka a sušička alebo kombinácia — toto je otázka, pri ktorej sa väčšina ľudí rozhoduje podľa ceny alebo miesta.
+          Obe kritériá sú dôležité, ale nie sú jediné. Tento článok vám ukáže, kedy kombinácia dáva zmysel a kedy za
+          ušetrené miesto zaplatíte príliš vysokú cenu.
+        </p>
+      </div>
+
+      <div className="article-section">
+        <h2>Ako funguje kombinácia a kde je háčik</h2>
+        <p>
+          Kombinovaná práčka so sušičkou robí oboje v jednom bubne. Zvonka vyzerá ako bežná práčka — rovnaké rozmery,
+          jeden prívodný kábel, jedna vodovodná prípojka.
+        </p>
+        <p>
+          Háčik je v kapacite. Bubon má zvyčajne objem <strong>7–9 kg na pranie</strong>, ale na sušenie zvládne
+          len <strong>4–5 kg</strong>. To znamená, že pri plnom naplnení musíte pranie rozdeliť na dve časti —
+          alebo sušičku vôbec nepoužiť.
+        </p>
+        <div className="article-tip">
+          <strong>Kľúčové číslo:</strong> Pri kombináciách platí, že kapacita sušenia je zhruba polovica kapacity prania.
+          Ak kúpite model 9/6 kg — vyperie 9 kg, ale vysuší iba 6 kg naraz.
+        </div>
+      </div>
+
+      <div className="article-section">
+        <h2>Porovnanie: čo dostanete a za čo platíte</h2>
+        <div className="article-clean-grid">
+          <div className="article-clean-card">
+            <h3>Kombinácia 2v1</h3>
+            <p>Jeden spotrebič, jeden zábor miesta, jedna inštalácia. Ideálna ak nemáte priestor na dva spotrebiče.</p>
+            <span className="article-clean-price">Od cca 500 €</span>
+          </div>
+          <div className="article-clean-card">
+            <h3>Práčka + sušička</h3>
+            <p>Plná kapacita oboch, možnosť prať a sušiť súčasne. Každý spotrebič robí svoju prácu naplno.</p>
+            <span className="article-clean-price">Od cca 350 + 400 € = 750 €</span>
+          </div>
+          <div className="article-clean-card">
+            <h3>Práčka + sušič vzduchotechnikou</h3>
+            <p>Najlacnejší vstup, ale vyžaduje miesto na sušenie. Nie vždy praktické v malom byte.</p>
+            <span className="article-clean-price">Od cca 350 €</span>
+          </div>
+        </div>
+      </div>
+
+      <div className="article-section">
+        <h2>Kedy sa kombinácia oplatí</h2>
+        <ul className="article-list">
+          <li><strong>Malý byt alebo garsónka</strong> — máte priestor len na jeden spotrebič. Kombinácia je jediné riešenie.</li>
+          <li><strong>1–2 osoby v domácnosti</strong> — preriete menej ako 5 kg naraz, kapacita sušenia postačuje.</li>
+          <li><strong>Sušíte príležitostne</strong> — sušičku využívate len v zime alebo pri daždi, nie každý deň.</li>
+          <li><strong>Nájomný byt</strong> — nechcete investovať do dvoch spotrebičov, ktoré si neberieme so sebou.</li>
+        </ul>
+      </div>
+
+      <div className="article-section">
+        <h2>Kedy sa kombinácia neoplatí</h2>
+        <ul className="article-list">
+          <li><strong>Rodina s deťmi</strong> — perieš každý deň, kapacita sušenia 4–5 kg nestačí. Čakáš na druhý cyklus.</li>
+          <li><strong>Sušíte pravidelne</strong> — kombinácia má dlhší cyklus sušenia (3–5 hodín) a vyššiu spotrebu než samostatná sušička.</li>
+          <li><strong>Máte kotolňu alebo kúpeľňu s miestom</strong> — samostatné spotrebiče sú spoľahlivejšie a efektívnejšie.</li>
+          <li><strong>Chcete prať a sušiť súčasne</strong> — kombinácia to neumožňuje. Kým sa suší, nemôžete prať.</li>
+        </ul>
+        <div className="article-tip">
+          <strong>Dôležité:</strong> Kombinácia sa v priemere pokazí skôr než samostatné spotrebiče — opravuje sa zložitejší
+          mechanizmus. Servis kombinácie je drahší než oprava práčky alebo sušičky zvlášť.
+        </div>
+      </div>
+
+      <div className="article-section">
+        <h2>Typy sušičiek — čo znamená kondenzačná a tepelné čerpadlo</h2>
+        <p>Ak sa rozhodnete pre samostatnú sušičku, narazíte na dva hlavné typy:</p>
+        <div className="article-energy-grid">
+          <div className="article-energy-row">
+            <span className="energy-badge energy-a">TČ</span>
+            <span><strong>Tepelné čerpadlo</strong> — najúspornejšia možnosť, energetická trieda A+++. Suší pri nižšej teplote, šetrí tkaniny. Cena od 600 €, úspora na elektrine až 50 % oproti kondenzačnej.</span>
+          </div>
+          <div className="article-energy-row">
+            <span className="energy-badge energy-b">K</span>
+            <span><strong>Kondenzačná</strong> — nevyžaduje výfukové potrubie, vodu zachytáva do nádoby alebo odvádza hadicou. Dostupnejšia cena od 350 €, vyššia spotreba.</span>
+          </div>
+          <div className="article-energy-row">
+            <span className="energy-badge energy-c">O</span>
+            <span><strong>Odťahová</strong> — najlacnejšia, ale vyžaduje otvor do vonku. Hodí sa do domov, nie do bytov.</span>
+          </div>
+        </div>
+        <p>
+          Pre byt odporúčame kondenzačnú alebo tepelné čerpadlo. Ak perieš viac než 3-krát týždenne,
+          investícia do tepelného čerpadla sa vráti do 3–4 rokov.
+        </p>
+      </div>
+
+      <div className="article-section">
+        <h2>Odporúčania podľa situácie</h2>
+        <div className="article-budget-grid">
+          <div className="article-budget-card">
+            <span className="article-budget-label">Malý byt, 1–2 osoby</span>
+            <h3>Kombinácia 2v1</h3>
+            <p>Ušetríte miesto, jedna inštalácia. Vyberajte model s kapacitou aspoň 8/5 kg a tepelným čerpadlom.</p>
+          </div>
+          <div className="article-budget-card article-budget-featured">
+            <span className="article-budget-label">Rodina, 3+ osoby</span>
+            <h3>Práčka + sušička zvlášť</h3>
+            <p>Plná kapacita, súbežná prevádzka, dlhšia životnosť. Najlepšia investícia na roky dopredu.</p>
+          </div>
+          <div className="article-budget-card">
+            <span className="article-budget-label">Obmedzený rozpočet</span>
+            <h3>Práčka teraz, sušička neskôr</h3>
+            <p>Kúpte dobrú práčku, sušičku dokúpite keď to finančne vyjde. Obe spolu postavia na seba (stackovanie).</p>
+          </div>
+        </div>
+      </div>
+
+      <div className="article-section">
+        <h2>Záverečný checklist pred rozhodnutím</h2>
+        <ul className="article-checklist">
+          <li><span className="check-icon">✓</span> Zmerajte dostupné miesto — pasujú tam dva spotrebiče?</li>
+          <li><span className="check-icon">✓</span> Koľko kg perieš naraz? Nad 5 kg pravidelne → zvlášť</li>
+          <li><span className="check-icon">✓</span> Sušíš každý deň alebo len príležitostne?</li>
+          <li><span className="check-icon">✓</span> Je k dispozícii prívod vody aj odtok pre dva spotrebiče?</li>
+          <li><span className="check-icon">✓</span> Ak kombinácia — hľadaj model aspoň 8/5 kg s tepelným čerpadlom</li>
+          <li><span className="check-icon">✓</span> Ak sušička zvlášť — kondenzačná alebo tepelné čerpadlo pre byt</li>
+        </ul>
+      </div>
+
+    </article>
+  )
+}
+
 const articleComponents = {
   'ako-vybrat-vstavanu-ruru': ArticleRura,
   'rozmery-pre-zabudovanie-checklist': ArticleRozmery,
+  'pracka-susicka-alebo-kombinacia': ArticlePrackaSusicka,
 }
 
 export default function ArticlePage() {

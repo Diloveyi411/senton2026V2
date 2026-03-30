@@ -29,7 +29,7 @@ export default function BlogPage() {
                   <p className="blog-card-perex">{a.perex}</p>
                   <div className="blog-card-footer">
                     <span className="blog-read-time">{a.readTime}</span>
-                    {['ako-vybrat-vstavanu-ruru', 'rozmery-pre-zabudovanie-checklist'].includes(a.slug) ? (
+                    {['ako-vybrat-vstavanu-ruru', 'rozmery-pre-zabudovanie-checklist', 'pracka-susicka-alebo-kombinacia'].includes(a.slug) ? (
                       <Link to={`/blog/${a.slug}`} className="blog-read-link">Čítať článok →</Link>
                     ) : (
                       <span className="blog-coming-soon">Čoskoro</span>
