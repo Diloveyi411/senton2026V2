@@ -81,8 +81,22 @@
   display: block;
 }
 
+/* contain variant — pre fotky s anotáciami / infografikami */
+.article-hero-img-wrap--contain {
+  height: auto;
+  background: #eaecef;
+}
+
+.article-hero-img-wrap--contain .article-hero-img {
+  height: auto;
+  max-height: 520px;
+  object-fit: contain;
+}
+
 @media (max-width: 768px) {
   .article-hero-img-wrap { height: 260px; }
+  .article-hero-img-wrap--contain { height: auto; }
+  .article-hero-img-wrap--contain .article-hero-img { max-height: 280px; }
 }
 
 /* ── Layout ── */

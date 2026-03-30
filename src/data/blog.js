@@ -6,6 +6,7 @@ export const articles = [
     perex: 'Rozmery, energetická trieda, typ čistenia a čo porovnať pred kúpou. Kompletný sprievodca pre každého.',
     readTime: '6 min čítania',
     heroImg: '/blog-vstavana-rura.png',
+    heroImgFit: 'cover',
   },
   {
     slug: 'bosch-vs-electrolux-umyvacky',
@@ -21,6 +22,7 @@ export const articles = [
     perex: 'Zmerali ste výklenok? Skontrolujte týchto 8 rozmerov pred objednaním vstavaného spotrebiča. Ušetríte si problémy.',
     readTime: '4 min čítania',
     heroImg: '/blog-rozmery-zabudovanie.png',
+    heroImgFit: 'contain',
   },
   {
     slug: 'najcastejsie-chyby-pri-vybere-chladnicky',

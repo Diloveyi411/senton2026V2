@@ -502,7 +502,7 @@ export default function ArticlePage() {
       </section>
 
       {meta.heroImg && (
-        <div className="article-hero-img-wrap">
+        <div className={`article-hero-img-wrap${meta.heroImgFit === 'contain' ? ' article-hero-img-wrap--contain' : ''}`}>
           <img src={meta.heroImg} alt={meta.title} className="article-hero-img" />
         </div>
       )}
