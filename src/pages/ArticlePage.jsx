@@ -736,6 +736,110 @@ function ArticleChladnicky() {
   )
 }
 
+function ArticleReklamacia() {
+  return (
+    <article className="article-body">
+
+      <div className="article-section">
+        <p className="article-intro">
+          Spotrebič sa pokazil v záruke. Čo teraz? Postup je jednoduchší, ako si myslíte —
+          ale dôležité je vedieť, kam zavolať ako prvé a čo si pripraviť.
+        </p>
+      </div>
+
+      <div className="article-section">
+        <h2>Zákonná záručná doba</h2>
+        <p>
+          Na nové spotrebiče máte zo zákona <strong>24-mesačnú záručnú dobu</strong>. Niektorí výrobcovia
+          (Bosch, Siemens, AEG) poskytujú predĺženú záruku 3–5 rokov po registrácii produktu.
+        </p>
+        <div className="article-tip">
+          Zaregistrujte spotrebič u výrobcu hneď po kúpe — väčšina značiek ponúka predĺženie záruky zadarmo.
+          Stačí sériové číslo z typového štítku.
+        </div>
+      </div>
+
+      <div className="article-section">
+        <h2>Krok za krokom: ako reklamovať</h2>
+        <div className="article-checklist-numbered">
+          <div className="article-check-item">
+            <div className="check-num">1</div>
+            <div>
+              <strong>Zdokumentujte poruchu</strong>
+              <p>Odfotografujte alebo natočte video závady. Poznačte si kedy nastala a ako sa prejavuje (chybový kód, zvuk, symptóm).</p>
+            </div>
+          </div>
+          <div className="article-check-item">
+            <div className="check-num">2</div>
+            <div>
+              <strong>Pripravte doklady</strong>
+              <p>Faktúra alebo dodací list od Sentonu, záručný list (ak bol priložený), sériové číslo spotrebiča.</p>
+            </div>
+          </div>
+          <div className="article-check-item">
+            <div className="check-num">3</div>
+            <div>
+              <strong>Kontaktujte Senton</strong>
+              <p>Zavolajte nám na +421 905 901 500. Poradíme vám, či ide o záručnú opravu alebo problém, ktorý vyriešite sami.</p>
+            </div>
+          </div>
+          <div className="article-check-item">
+            <div className="check-num">4</div>
+            <div>
+              <strong>Servisná návšteva</strong>
+              <p>Autorizovaný technik príde priamo k vám domov. Väčšinu opráv vieme vyriešiť na mieste, bez odvozu spotrebiča.</p>
+            </div>
+          </div>
+          <div className="article-check-item">
+            <div className="check-num">5</div>
+            <div>
+              <strong>Výsledok reklamácie</strong>
+              <p>Oprava, výmena dielu, alebo výmena spotrebiča — záleží na type poruchy. Zákonná lehota na vybavenie reklamácie je 30 dní.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="article-section">
+        <h2>Čo záručná oprava kryje a čo nie</h2>
+        <div className="article-table-wrap">
+          <table className="article-table">
+            <thead>
+              <tr><th>Kryté zárukou</th><th>Nekryté zárukou</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Výrobná vada materiálu alebo komponentov</td><td>Mechanické poškodenie (pád, náraz)</td></tr>
+              <tr><td>Porucha elektroniky bez zásahu zvonka</td><td>Poškodenie vodou alebo prepätím</td></tr>
+              <tr><td>Prestatie fungovať bez viditeľnej príčiny</td><td>Nesprávna inštalácia alebo obsluha</td></tr>
+              <tr><td>Chybný diel z výroby</td><td>Bežné opotrebenie (tesnenia, žiarovky)</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div className="article-section">
+        <h2>Čo ak je spotrebič neopraviteľný?</h2>
+        <p>
+          Ak technik poruchu opraviť nevie alebo by oprava presahovala hodnotu spotrebiča,
+          máte nárok na <strong>výmenu za rovnocenný model</strong> alebo <strong>vrátenie peňazí</strong>.
+          Rozhodnutie závisí od konkrétneho prípadu a zákonných podmienok.
+        </p>
+      </div>
+
+      <div className="article-section">
+        <h2>Checklist pred telefonátom</h2>
+        <ul className="article-checklist">
+          <li><span className="check-icon">✓</span> Fotka alebo video závady pripravené</li>
+          <li><span className="check-icon">✓</span> Sériové číslo z typového štítku (zvyčajne vzadu alebo vo vnútri)</li>
+          <li><span className="check-icon">✓</span> Faktúra alebo číslo objednávky z Sentonu</li>
+          <li><span className="check-icon">✓</span> Popis kedy a ako sa porucha prvý raz objavila</li>
+        </ul>
+      </div>
+
+    </article>
+  )
+}
+
 function ArticleUmyvacka() {
   return (
     <article className="article-body">
@@ -1146,6 +1250,7 @@ const articleComponents = {
   'energeticka-trieda-spotrebice-2026': ArticleEnergetickaTrieda,
   'odvoz-stareho-spotrebica-ako-funguje': ArticleOdvoz,
   'umyvacka-riadu-do-malej-kuchyne': ArticleUmyvacka,
+  'reklamacia-spotrebica-postup': ArticleReklamacia,
 }
 
 export default function ArticlePage() {
