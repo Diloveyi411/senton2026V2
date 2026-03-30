@@ -157,8 +157,181 @@ function ArticleRura() {
   )
 }
 
+function ArticleRozmery() {
+  return (
+    <article className="article-body">
+
+      <div className="article-section">
+        <p className="article-intro">
+          Väčšina reklamácií pri zabudovaných spotrebičoch má rovnaký dôvod: spotrebič bol objednaný bez overenia rozmerov.
+          Doručenie prebehlo, montér prišiel — a zistilo sa, že skrinka je o 2 cm nízka. Tento checklist vám ušetrí čas, peniaze
+          a zbytočný stres.
+        </p>
+      </div>
+
+      <div className="article-section">
+        <h2>Prečo rozmery tak veľmi záleží</h2>
+        <p>
+          Vstavaný spotrebič musí presne sedieť do pripraveného otvoru. Na rozdiel od voľne stojacich spotrebičov tu
+          nie je priestor na kompromis — ak je otvor o 1 cm príliš úzky, spotrebič jednoducho nepasuje. Ak je príliš
+          široký, zostane viditeľná medzera a spotrebič sa nedá správne upevniť.
+        </p>
+        <div className="article-tip">
+          <strong>Zlaté pravidlo:</strong> Merajte trikrát — šírku hore, v strede aj dole. Staré kuchyne nebývajú
+          vždy rovnako zvislé a rozdiel 3–5 mm je bežný.
+        </div>
+      </div>
+
+      <div className="article-section">
+        <h2>Checklist: 8 rozmerov ktoré musíte poznať</h2>
+
+        <div className="article-checklist-numbered">
+
+          <div className="article-check-item">
+            <span className="check-num">1</span>
+            <div>
+              <strong>Šírka otvoru</strong>
+              <p>Merajte na troch miestach — hore, v strede a dole. Rozhoduje najmenší rozmer. Spotrebič musí byť
+              o 2–4 mm užší ako otvor. Štandardné šírky: <strong>45 cm</strong> (úzke modely) alebo <strong>60 cm</strong> (štandard).</p>
+            </div>
+          </div>
+
+          <div className="article-check-item">
+            <span className="check-num">2</span>
+            <div>
+              <strong>Výška otvoru</strong>
+              <p>Merajte od podlahy skrinky po spodnú hranu pracovnej dosky alebo vrchnej police.
+              Väčšina vstavaných rúr a umývačiek vyžaduje <strong>min. 820 mm</strong>, práčky <strong>min. 850 mm</strong>.
+              Pozor na modely so zvýšeným ovládacím panelom — môžu vyžadovať až 880 mm.</p>
+            </div>
+          </div>
+
+          <div className="article-check-item">
+            <span className="check-num">3</span>
+            <div>
+              <strong>Hĺbka skrinky</strong>
+              <p>Merajte od zadnej steny po prednú hranu dvierok skrinky (nie po čelnú hranu nábytku).
+              Minimum pre väčšinu spotrebičov je <strong>560 mm</strong>. Ak je skrinka plytšia, spotrebič bude vyčnievať
+              alebo sa nedá zatvoriť.</p>
+            </div>
+          </div>
+
+          <div className="article-check-item">
+            <span className="check-num">4</span>
+            <div>
+              <strong>Výška sokla (pre chladničky a práčky)</strong>
+              <p>Ak je spotrebič umiestnený na sokli alebo podstavci, odrátajte jeho výšku od celkovej dostupnej
+              výšky. Bežná výška sokla je <strong>100–150 mm</strong>. Chladničky zabudované pod pracovnou doskou
+              musia zmestiť vrátane prípadného sokla.</p>
+            </div>
+          </div>
+
+          <div className="article-check-item">
+            <span className="check-num">5</span>
+            <div>
+              <strong>Poloha elektrickej zásuvky</strong>
+              <p>Kábel vstavanej rúry má zvyčajne <strong>1,5 m</strong>, umývačky a práčky <strong>1,5–2 m</strong>.
+              Zásuvka musí byť v dosahu — a nesmie byť za spotrebičom (nie je prístupná po zabudovaní).
+              Ideálna poloha: v susednej skrinke alebo nad spotrebičom.</p>
+            </div>
+          </div>
+
+          <div className="article-check-item">
+            <span className="check-num">6</span>
+            <div>
+              <strong>Prívod vody (umývačky a práčky)</strong>
+              <p>Prívod musí byť v dosahu prívodnej hadice — štandardná dĺžka je <strong>1,5 m</strong>.
+              Skontrolujte tiež typ ventilu: rohový ventil pod drezom je najpohodlnejší.
+              Ak prívod nie je v blízkosti, je potrebný zásah inštalatéra.</p>
+            </div>
+          </div>
+
+          <div className="article-check-item">
+            <span className="check-num">7</span>
+            <div>
+              <strong>Odtok (umývačky a práčky)</strong>
+              <p>Odtoková hadica má dĺžku <strong>1,5–2 m</strong> a musí byť vyvedená do sifónu alebo odtokového
+              potrubia. Výška odtoku nesmie prekročiť <strong>1 m</strong> nad podlahou — inak čerpadlo nestačí
+              vytlačiť vodu. Pri práčkach je maximálna výška odtoku zvyčajne <strong>100 cm</strong>.</p>
+            </div>
+          </div>
+
+          <div className="article-check-item">
+            <span className="check-num">8</span>
+            <div>
+              <strong>Vetranie (chladničky)</strong>
+              <p>Zabudovaná chladnička potrebuje priestor na cirkuláciu vzduchu — inak sa prehrieva a znižuje
+              sa jej životnosť. Minimálny priestor nad chladničkou: <strong>50 mm</strong>, za chladničkou: <strong>50 mm</strong>.
+              Modely s ventilačnou mriežkou vpredu (No Frost) majú menšie nároky na vetranie zo zadnej strany.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div className="article-section">
+        <h2>Štandardné rozmery podľa typu spotrebiča</h2>
+        <div className="article-table-wrap">
+          <table className="article-table">
+            <thead>
+              <tr>
+                <th>Spotrebič</th>
+                <th>Šírka</th>
+                <th>Výška</th>
+                <th>Hĺbka</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Vstavaná rúra</td><td>56–60 cm</td><td>56–60 cm</td><td>min. 56 cm</td></tr>
+              <tr><td>Vstavaná umývačka (štandard)</td><td>60 cm</td><td>82 cm</td><td>min. 56 cm</td></tr>
+              <tr><td>Vstavaná umývačka (úzka)</td><td>45 cm</td><td>82 cm</td><td>min. 56 cm</td></tr>
+              <tr><td>Práčka pod pracovnou doskou</td><td>60 cm</td><td>min. 85 cm</td><td>min. 56 cm</td></tr>
+              <tr><td>Chladnička pod prac. doskou</td><td>56–60 cm</td><td>82–88 cm</td><td>min. 55 cm</td></tr>
+              <tr><td>Vstavaná mikrovlnná rúra</td><td>56–60 cm</td><td>38–46 cm</td><td>min. 32 cm</td></tr>
+              <tr><td>Varná doska (štandard)</td><td>60 cm</td><td>—</td><td>min. 50 cm</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div className="article-tip">
+          <strong>Pozor:</strong> Tabuľka uvádza minimálne rozmery otvoru. Skutočný spotrebič býva o 2–5 mm menší —
+          výrobcovia rátajú s montážnou vôľou. Vždy si overte konkrétne rozmery v technickom liste vybraného modelu.
+        </div>
+      </div>
+
+      <div className="article-section">
+        <h2>Čo ak rozmery nevychádzajú?</h2>
+        <p>
+          Nesnažte sa situáciu riešiť hrubou silou. Máte tri možnosti:
+        </p>
+        <ul className="article-list">
+          <li><strong>Vybrať iný model</strong> — mnohé značky ponúkajú rovnaký spotrebič vo viacerých šírkach (45 a 60 cm). Úzky model
+          môže byť riešením ak otvor nestačí na štandard.</li>
+          <li><strong>Upraviť skrinku</strong> — stolár vie rozšíriť alebo zúžiť otvor. Lacnejšie ako meniť celú kuchyňu.</li>
+          <li><strong>Poradiť sa vopred</strong> — zafoťte skrinku s pásmom a napíšte nám. Bezplatne overíme, ktoré modely pasujú.</li>
+        </ul>
+      </div>
+
+      <div className="article-section">
+        <h2>Záverečný checklist pred objednaním</h2>
+        <ul className="article-checklist">
+          <li><span className="check-icon">✓</span> Šírka otvoru zmeraná na 3 miestach (najmenší rozmer)</li>
+          <li><span className="check-icon">✓</span> Výška otvoru od podlahy skrinky po hornú hranu</li>
+          <li><span className="check-icon">✓</span> Hĺbka skrinky od zadnej steny po prednú hranu</li>
+          <li><span className="check-icon">✓</span> Výška sokla (ak existuje) odrátaná</li>
+          <li><span className="check-icon">✓</span> Elektrická zásuvka v dosahu kábla a prístupná</li>
+          <li><span className="check-icon">✓</span> Prívod vody v dosahu (umývačky, práčky)</li>
+          <li><span className="check-icon">✓</span> Odtok max. 1 m výšky, v dosahu hadice</li>
+          <li><span className="check-icon">✓</span> Vetranie pre chladničku min. 50 mm nad a za spotrebičom</li>
+        </ul>
+      </div>
+
+    </article>
+  )
+}
+
 const articleComponents = {
   'ako-vybrat-vstavanu-ruru': ArticleRura,
+  'rozmery-pre-zabudovanie-checklist': ArticleRozmery,
 }
 
 export default function ArticlePage() {
